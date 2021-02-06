@@ -11,7 +11,7 @@ public class TestClass {
     @BeforeClass
     public  static void HepsiburadaGiris()
     {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/Talha BEĞENDİ/Documents/Selenium/ChromeDriver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
         Webdriver = new ChromeDriver();
         Webdriver.manage().window().maximize();
         Webdriver.get("https://www.hepsiburada.com/");
